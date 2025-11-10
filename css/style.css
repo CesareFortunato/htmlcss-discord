@@ -45,11 +45,11 @@ a:hover {
 }
 
 h1{
-    font-size: 96px;
+    font-size: 86px;
 }
 
 p{
-    font-size: 32px;
+    font-size: 28px;
 }
 /* grids */
 
@@ -63,6 +63,14 @@ p{
 
 .col-4 {
     flex-basis: calc((100% / 12) * 4);
+}
+
+.col-5 {
+    flex-basis: calc((100% / 12) * 5);
+}
+
+.col-6 {
+    flex-basis: calc((100% / 12) * 6);
 }
 
 .col-7 {
@@ -174,6 +182,10 @@ p{
 
 /* main styles */
 
+.section-paragraphs{
+    padding-top: 50px;
+}
+
 .first-section {
     display: flex;
     justify-content: center;
@@ -184,9 +196,10 @@ p{
 .first-section-container {
     display: flex;
     height: auto;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .second-section {
@@ -198,10 +211,12 @@ p{
 
 .second-section-container {
     display: flex;
+    flex-direction: row-reverse;
     height: auto;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .third-section-container {
@@ -215,7 +230,7 @@ p{
 .third-section {
     display: flex;
     height: auto;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     justify-content: space-between;
     padding: 20px;
@@ -223,6 +238,7 @@ p{
 
 .close-section {
     display: flex;
+    flex-direction: column;
     height: auto;
     width: 100%;
     margin: 0 auto;
