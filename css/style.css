@@ -7,8 +7,12 @@
 
 /* utilities */
 
-.font-white{
+.font-white {
     color: white;
+}
+
+.font-black {
+    color: black;
 }
 
 .background-header {
@@ -27,10 +31,26 @@
     background-color: rgb(43, 48, 54);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    border-radius: 45px;
+    padding: 5px;
+}
+
+h1{
+    font-size: 96px;
+}
+
+p{
+    font-size: 32px;
+}
 /* grids */
 
 .col-2 {
@@ -93,40 +113,66 @@ a{
     align-self: center;
 }
 
-.button-nav-bar {
+.login-nav-bar {
     flex: 1 1 0;
+    font-size: small;
+    padding: 10px;
     max-width: 60px;
     min-width: 20px;
     height: auto;
     align-self: center;
+    background-color: white;
+}
+
+
+.hello-section {
+    background-image: url(/imgs/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hello-container{
+    display: flex;
+    flex-basis: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+
+}
+
+#jumbo-p{
+    text-align: center;
+}
+
+.jumbo-btns-container{
+    display: flex;
+    flex-basis: 100%;
+    column-gap: 50px;
+}
+
+.btn-jumbo-mac{
+    background-color: white;
+    font-size: 32px;
+    padding: 15px;
+    align-self: center;
+}
+
+.btn-jumbo-browser{
+    background-color: black;
+    font-size: 32px;
+    padding: 15px;
+    align-self: center;
 }
 
 /* main styles */
-
-.hello-section {
-    display: flex;
-    justify-content: center;
-    height: 600px;
-    padding: 40px;
-}
-
-.hello-section-container {
-    display: flex;
-    height: auto;
-    width: 60%;
-    margin: 0 auto;
-    justify-content: center;
-
-}
-
-.hello-section-img {
-    flex-basis: 80%;
-    align-self: center;
-    max-width: 80%;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-}
 
 .first-section {
     display: flex;
